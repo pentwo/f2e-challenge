@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+
+  <title>TheF2E-SignUpVerify</title>
+</head>
+
+<body>
+  <section class="hero is-dark">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">F2E Challenge </h1>
+        <h2 class="subtitle">Sign-Up Checking System</h2>
+      </div>
+    </div>
+  </section>
+  <section class="section columns is-centered">
+    <div class="box column is-two-fifths">
+      <form class="">
+        <div class="field">
+          <label class="label">Please Enter Your E-mail</label>
+          <div class="control has-icons-left">
+
+            <input class="input" type="email" id='input-email' placeholder="example@gmail.com">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+          <p class="help is-invisible" id='email-valid'>This email is invalid</p>
+        </div>
+
+        <div class="field is-grouped is-grouped-centered">
+          <p class="control">
+            <button class="button is-primary" id='btn-submit'>Check</button>
+          </p>
+          <p class="control">
+            <button type="reset" value="reset" class="button is-danger is-outlined" id='btn-cancel'>Reset</button>
+          </p>
+        </div>
+        <div class="field is-grouped is-grouped-centered">
+          <p class="control">
+            <button class="button is-info" id='btn-signuptotal'>Check Total</button>
+          </p>
+        </div>
+
+
+      </form>
+    </div>
+  </section>
+  <div class="modal" id="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <!-- Any other Bulma elements you want -->
+      <div class="notification has-text-centered">
+        <p id='queryResult'></p>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <a href="https://github.com/hexschool/TheF2E" target="_blank">Click Here to Sign-Up</a>
+        </p>
+        <p>
+          <small>Code by
+            <strong>Steven Peng</strong>
+            <a href="https://github.com/pentwo/">
+              <span class="icon is-small">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+          </small>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
