@@ -2,7 +2,7 @@
 source [hexschool/TheF2E](https://github.com/hexschool/TheF2E)
 
 ## 00 SignUpVerify
-Finished page (http://pentwo.github.io/f2e-challenge/00/index.html)
+*Finished page (http://pentwo.github.io/f2e-challenge/00/index.html)*
 
 source:
 - API doc (https://github.com/hexschool/TheF2E/wiki/API-DOC)
@@ -15,7 +15,7 @@ features:
 
 Difficulty faced:
 - when using `fetch` to `POST` a JSON request, should adding `headers` in request. no specify "Content-Type" in the header, server can't heandle `POST` data.
-```
+```javascript
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json"
