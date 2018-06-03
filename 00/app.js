@@ -133,3 +133,18 @@ function handleModalDisplay(content) {
   modalDiv.classList.add("is-active");
   document.getElementById("queryResult").innerHTML = content;
 }
+
+function calculateTime() {
+  const { days, hours, minutes, seconds, milliseconds } = moment.duration(
+    moment("2018-06-04 12:00+08").diff(moment())
+  )._data;
+
+  const html = `${days} Days and ${hours}:${minutes}:${seconds}`;
+  console.log("html: ", html);
+  document.getElementById("countdown").innerHTML = html;
+  // console.log("timeLeft: ", timeLeft._data);
+}
+
+setInterval(() => {
+  calculateTime();
+}, 1000);
