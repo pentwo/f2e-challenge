@@ -2,6 +2,8 @@
 source [hexschool/TheF2E](https://github.com/hexschool/TheF2E)
 
 ## 00 SignUpVerify
+Finished page (http://pentwo.github.io/f2e-challenge/00/index.html)
+
 source:
 - API doc (https://github.com/hexschool/TheF2E/wiki/API-DOC)
 
