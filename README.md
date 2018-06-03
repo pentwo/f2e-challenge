@@ -4,6 +4,11 @@ source [hexschool/TheF2E](https://github.com/hexschool/TheF2E)
 ## 00 SignUpVerify
 *Finished page (http://pentwo.github.io/f2e-challenge/00/index.html)*
 
+User story:
+- A page that user can verify whether they have signed-up for F2E challenge or not.
+- Request API to feedback how many people already signed-up for F2E challenge.
+- Countdown to 2018-06-04 12:00
+
 source:
 - API doc (https://github.com/hexschool/TheF2E/wiki/API-DOC)
 
