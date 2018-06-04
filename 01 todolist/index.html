@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500" rel="stylesheet">
+
+  <title>Todo-list</title>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div id="navbarTop" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="#" class="navbar-item active">My Tasks</a>
+        <a href="#" class="navbar-item">In Progress</a>
+        <a href="#" class="navbar-item">Completed</a>
+      </div>
+    </div>
+  </nav>
+  <div class="addTask">
+    <form>
+      <input type="text" name="" id="addTaskText" placeholder="+ Add Task">
+    </form>
+  </div>
+  <div class="tasklist">
+
+    <div class="task star">
+      <div class="icon-tick">
+        <i class="far fa-square"></i>
+      </div>
+      <div class="title">Type Something Here...</div>
+      <div class="icon-star">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="icon-edit">
+        <i class="fas fa-pencil-alt"></i>
+      </div>
+      <div class="task-addon">
+        <div class="addon addon-date">
+          <i class="far fa-calendar-alt"></i> 5/14
+        </div>
+        <div class="addon addon-file">
+          <i class="far fa-file"></i>
+        </div>
+        <div class="addon addon-note">
+          <i class="far fa-comment-dots"></i>
+        </div>
+      </div>
+    </div>
+    <div class="task star">
+      <div class="icon-tick">
+        <i class="far fa-square"></i>
+      </div>
+      <div class="title">Type Something Here...</div>
+      <div class="icon-star">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="icon-edit">
+        <i class="fas fa-pencil-alt"></i>
+      </div>
+      <div class="task-addon">
+        <div class="addon addon-file">
+          <i class="far fa-file"></i>
+        </div>
+        <div class="addon addon-note">
+          <i class="far fa-comment-dots"></i>
+        </div>
+      </div>
+    </div>
+    <div class="task">
+      <div class="icon-tick">
+        <i class="far fa-square"></i>
+      </div>
+      <div class="title">Type Something Here...</div>
+      <div class="icon-star">
+        <i class="far fa-star"></i>
+      </div>
+      <div class="icon-edit">
+        <i class="fas fa-pencil-alt"></i>
+      </div>
+      <div class="task-addon">
+        <div class="addon addon-date">
+          <i class="far fa-calendar-alt"></i> 6/18
+        </div>
+      </div>
+    </div>
+    <div class="task">
+      <div class="icon-tick">
+        <i class="far fa-square"></i>
+      </div>
+      <div class="title">Type Something Here...</div>
+      <div class="icon-star">
+        <i class="far fa-star"></i>
+      </div>
+      <div class="icon-edit">
+        <i class="fas fa-pencil-alt"></i>
+      </div>
+      <div class="task-addon">
+        <div class="addon addon-file">
+          <i class="far fa-file"></i>
+        </div>
+      </div>
+    </div>
+    <div class="task done">
+      <div class="icon-tick">
+        <i class="far fa-check-square"></i>
+      </div>
+      <div class="title">Type Something Here...</div>
+      <div class="icon-star">
+        <i class="far fa-star"></i>
+      </div>
+      <div class="icon-edit">
+        <i class="fas fa-pencil-alt"></i>
+      </div>
+      <div class="task-addon">
+      </div>
+    </div>
+  </div>
+  <div class="taskCount">
+    <div class="status">1 task left</div>
+  </div>
+</body>
+
+</html>

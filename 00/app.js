@@ -138,8 +138,12 @@ function calculateTime() {
   const { days, hours, minutes, seconds, milliseconds } = moment.duration(
     moment("2018-06-04 12:00+08").diff(moment())
   )._data;
-
-  const html = `${days} Days and ${hours}:${minutes}:${seconds}`;
+  let html = "";
+  if (seconds < 0 || minutes < 0) {
+    html = `Challenge already started.`;
+  } else {
+    html = `${days} Days and ${hours}:${minutes}:${seconds}`;
+  }
   console.log("html: ", html);
   document.getElementById("countdown").innerHTML = html;
   // console.log("timeLeft: ", timeLeft._data);
