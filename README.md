@@ -4,7 +4,7 @@ source [hexschool/TheF2E](https://github.com/hexschool/TheF2E)
 
 ## 00 SignUpVerify
 
-_Finished page (http://pentwo.github.io/f2e-challenge/00/index.html)_
+_Finished page http://pentwo.github.io/f2e-challenge/00/index.html_
 
 User story:
 
@@ -14,7 +14,7 @@ User story:
 
 Source:
 
-* API doc (https://github.com/hexschool/TheF2E/wiki/API-DOC)
+* API doc https://github.com/hexschool/TheF2E/wiki/API-DOC
 
 Features:
 
@@ -36,7 +36,7 @@ Difficulty faced:
 
 ## 01 Todo-list
 
-_Finished page ((http://pentwo.github.io/f2e-challenge/01/index.html)_
+_Finished page http://pentwo.github.io/f2e-challenge/01-todolist/index.html_
 
 User story:
 
@@ -51,7 +51,7 @@ User story:
 Source & Reference UI design:
 
 * [ TheF2E/stage/No1.todolist](https://github.com/hexschool/TheF2E/blob/master/stage/No1.todolist.md)
-* (https://hexschool.github.io/THE_F2E_Design/todolist/)
+* https://hexschool.github.io/THE_F2E_Design/todolist/
 
 Features:
 
