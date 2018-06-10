@@ -24,13 +24,46 @@
       </div>
     </div>
   </nav>
-  <div class="addTask">
-    <form>
-      <input type="text" name="" id="addTaskText" placeholder="+ Add Task">
-    </form>
-  </div>
-  <div class="tasklist">
 
+  <form class="newTaskTitle">
+    <input class="inputField" type="text" name="" id="addTaskText" placeholder="+ Add Task">
+  </form>
+  <div class="addTask">
+
+    <div class="newTask">
+      <form class="newTask__form">
+        <div class="form__input">
+          <i class="far fa-calendar-alt"></i>
+          <label>Due Date</label>
+          <input class="form__input--date" type="date" name="" id="" />
+          <input class="form__input--time" type="time" name="" id="" />
+        </div>
+
+        <div class="form__input">
+          <i class="far fa-file"></i>
+          <label>File</label>
+          <input class="form__input--file" type="file" name="" id="" />
+        </div>
+
+        <div class="form__input">
+          <i class="far fa-comment-dots"></i>
+          <label>Comment</label>
+          <textarea class="form__input--comment" name="" id="" cols="60" rows="10" placeholder="Type your memo here..."></textarea>
+        </div>
+      </form>
+    </div>
+
+    <div class="buttons">
+      <button class="button button-cancel">
+        <i class="fas fa-times"></i> Cancel
+      </button>
+      <button class="button button-addtask">
+        <i class="fas fa-plus"></i> Add Task
+      </button>
+    </div>
+  </div>
+
+  <div class="tasklist">
     <div class="task star">
       <div class="icon-tick">
         <i class="far fa-square"></i>
@@ -126,6 +159,8 @@
   <div class="taskCount">
     <div class="status">1 task left</div>
   </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>

@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Nav bar */
 .navbar {
   display: flex;
   justify-content: center;
@@ -37,13 +38,19 @@ body {
   border-bottom: 5px solid #00408b;
 }
 
-.addTask {
-  display: flex;
-  justify-content: center;
-  margin: 25px;
+/* New Task Editor */
+.newTaskTitle {
+  margin: 25px auto 0 auto;
+  width: 60vw;
 }
 
-input {
+.addTask {
+  margin: 0 auto 0 auto;
+  width: 60vw;
+  display: none;
+}
+
+.inputField {
   padding: 20px;
   background: #ffffff;
   border: 2px solid #c8c8c8;
@@ -53,6 +60,7 @@ input {
 }
 
 .tasklist {
+  margin-top: 25px;
   display: grid;
   grid-auto-columns: 60vw;
   justify-content: center;
@@ -115,4 +123,58 @@ input {
   margin: 10px;
   padding: 0 2rem;
   color: #c8c8c8;
+}
+
+.newTask {
+  margin: 0 auto 0 auto;
+  width: 60vw;
+}
+.newTask__form {
+  display: grid;
+  grid-template-columns: repeat(1fr, 5);
+  padding: 20px 50px;
+  grid-gap: 10px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button {
+  height: 60px;
+  font-size: 24px;
+  border: none;
+  font-weight: 400;
+}
+.button-cancel {
+  background-color: white;
+  color: red;
+}
+.button-addtask {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.form__input {
+  display: grid;
+  grid-template-columns: 20px auto auto;
+  grid-gap: 1rem;
+}
+.form__input--date {
+  grid-column: 2/2;
+}
+.form__input--time {
+  grid-column: 3/3;
+}
+.form__input--file {
+  grid-column: 2/2;
+}
+.form__input--comment {
+  grid-column: 2/3;
 }
