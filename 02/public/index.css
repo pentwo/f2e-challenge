@@ -6666,6 +6666,9 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+body {
+  background-color: #f2f2f2; }
+
 .navbar {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -6732,10 +6735,12 @@ label.panel-block {
   font-size: 16px; }
 
 .results {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .result__card {
   display: grid;
+  background-color: white;
   grid-template-columns: 220px auto;
   min-height: 220px; }
   .result__card:not(:first-child) {
@@ -6771,3 +6776,20 @@ label.panel-block {
     color: #b5b5b5; }
   .result__card .extras--date {
     color: #b5b5b5; }
+
+.paginations {
+  display: grid;
+  background-color: white;
+  width: 280px;
+  height: 40px;
+  line-height: 40px;
+  grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
+  color: #9013fe; }
+  .paginations span {
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px; }
+  .paginations .current {
+    background-color: #9013fe;
+    color: white; }

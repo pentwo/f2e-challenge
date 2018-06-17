@@ -1,14 +1,14 @@
 const API_URL =
   "https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97";
 
-const inputDateFrom = document.querySelector(".input-date-from");
-const inputDateTo = document.querySelector(".input-date-to");
+// const inputDateFrom = document.querySelector(".input-date-from");
+// const inputDateTo = document.querySelector(".input-date-to");
 
-const today = moment(new Date());
-const oneWeek = moment(today).add(14, "d");
+// const today = moment(new Date());
+// const oneWeek = moment(today).add(14, "d");
 
-inputDateFrom.valueAsDate = today._i;
-inputDateTo.valueAsDate = oneWeek._d;
+// inputDateFrom.valueAsDate = today._i;
+// inputDateTo.valueAsDate = oneWeek._d;
 
 const searchTerm = document.querySelector(".searchTerm");
 
@@ -62,7 +62,7 @@ function populateResult({ records, _links }) {
           </p>
           <p class="extras extras--tag ">
             <span class="tag is-light is-medium">
-              ${record.Ticketinfo}
+              ${record.Ticketinfo || "免費參觀"}
             </span>
           </p>
           <div class="line-break"></div>
@@ -107,6 +107,7 @@ function createTag(text, el) {
   `;
 }
 
+// init state
 async function init() {
   const initText = "三民區";
   const result = await callsearch(initText);
