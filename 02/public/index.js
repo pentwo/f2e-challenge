@@ -18,7 +18,6 @@ searchTerm.addEventListener("keypress", async e => {
   if (key === 13) {
     const result = await callsearch(text);
     populateResult(result.result);
-    console.log(text);
     createTag(text, document.querySelector(".tags"));
   }
 });
