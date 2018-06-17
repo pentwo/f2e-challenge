@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+  <title>HaveFun</title>
+</head>
+
+<body>
+  <section class="navbar ">
+    <img class="logo  " src="./images/logo.png" alt="LOGO">
+    <div class="searchInput ">
+      <span class="icon">
+        <i class="fas fa-search"></i>
+      </span>
+      <input class="searchTerm" type="text" value="三民區" placeholder="Explore your own activities">
+    </div>
+  </section>
+
+
+  <section class="section columns">
+    <section class="sidebar column is-narrow">
+      <div class="filter-card location">
+        <label class="filter-card__title">Location</label>
+        <select class="input" name="locations" id="locselecter">
+          <option value="twn">Taiwan</option>
+          <option value="aus">Australia</option>
+        </select>
+
+      </div>
+
+      <div class="filter-card date">
+        <label class="filter-card__title">Date</label>
+        <span>From</span>
+        <input class="input input-date-from" type="date" name="datefrom" id="">
+        <span>To</span>
+        <input class="input input-date-to" type="date" name="dateto" id="">
+      </div>
+
+      <div class="filter-card categories">
+        <label class="filter-card__title">Categories</label>
+
+        <div class="filter-card__checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <label for="all">All</label>
+        </div>
+        <div class="filter-card__checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <label for="entertainment">Entertainment</label>
+        </div>
+        <div class="filter-card__checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <label for="food">Food</label>
+        </div>
+        <div class="filter-card__checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <label for="learning">Learning</label>
+        </div>
+        <div class="filter-card__checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <label for="outdoors">Outdoors</label>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="main column">
+      <section class="text">
+        <h2 class="subtitle">Showing
+          <span class="resultCount">0</span>
+          results by...
+        </h2>
+        <div class="tags">
+          <!-- <span class="tag is-primary is-medium">
+            Taiwan
+            <button class="delete"></button>
+          </span> -->
+        </div>
+      </section>
+      <section class="results">
+        <!-- <div class="result__card">
+          <div class="result__card--img">
+            <img src="http://via.placeholder.com/640x480" alt="placeholder" class=" ">
+          </div>
+          <div class="result__card--container">
+            <div class="result__card--title">Lorem ipsum dolor sit</div>
+            <div class="result__card--content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus vel odit, cupiditate impedit enim adipisci</p>
+            </div>
+            <div class="result__card--extras">
+              <p class="extras extras--host ">
+                <span>
+                  Hoster
+                </span>
+              </p>
+              <p class="extras extras--tag ">
+                <span class="tag is-light is-medium">
+                  Entertainment
+                </span>
+              </p>
+              <div class="line-break"></div>
+              <p class="extras extras--loc ">
+                <i class="fas fa-map-marker-alt"></i>
+                Kaohsiung City
+              </p>
+              <p class="extras extras--date ">
+                <i class="far fa-calendar-alt"></i>
+                2018/5/24-2018/5/31
+              </p>
+            </div>
+          </div>
+
+        </div> -->
+
+      </section>
+
+    </section>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
