@@ -88,9 +88,9 @@ Difficulty faced:
 * TBD
 
 
-## 03 
+## 03 admin order
 
-_Finished page 
+_Finished page **TBD**
 
 請以「管理訂單」為參考方向，來思考一個電商網站所具備的後台管理功能。
 
