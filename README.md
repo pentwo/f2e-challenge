@@ -60,3 +60,49 @@ Features:
 Difficulty faced:
 
 * TBD
+
+## 02 filter
+
+_Finished page http://pentwo.github.io/f2e-challenge/02/public/index.html
+
+User story:
+* filter 推薦條件
+    1.關鍵字搜尋
+    2.地區搜尋
+    3.景點是否付費
+    4.是否全天候開放
+
+API可用參數：q = 關鍵字搜尋，limit = 筆數
+API出處：高雄 OPEN DATA
+
+Source & Reference UI design:
+
+* https://hexschool.github.io/THE_F2E_Design/week2-filter/
+
+Features:
+
+* TBD
+
+Difficulty faced:
+
+* TBD
+
+
+## 03 
+
+_Finished page 
+
+請以「管理訂單」為參考方向，來思考一個電商網站所具備的後台管理功能。
+
+
+Source & Reference UI design:
+
+* https://hexschool.github.io/THE_F2E_Design/week3-admin%20order/
+
+Features:
+
+* TBD
+
+Difficulty faced:
+
+* TBD
