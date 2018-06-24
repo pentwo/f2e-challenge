@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/ag-grid/dist/ag-grid.min.noStyle.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-grid.css">
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-theme-balham.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+  <title>Admin Dashboard - Orders</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <h1 class="navbar__logo--title">Shoptime</h1>
+    </div>
+    <div class="navbar__list">
+      <a class="navbar__list--listitem">HOME</a>
+      <a class="navbar__list--listitem active">ORDER</a>
+      <a class="navbar__list--listitem">PRODUCT</a>
+    </div>
+    <div class="navbar__btn">
+      ADMIN
+    </div>
+  </nav>
+  <div class="orders">
+
+    <div id="myGrid" class="ag-theme-balham myTable"></div>
+  </div>
+
+  <script src="orders.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <h1 class="navbar__logo--title">Shoptime</h1>
+    </div>
+    <div class="navbar__list">
+      <a class="navbar__list--listitem active">HOME</a>
+      <a class="navbar__list--listitem">ORDER</a>
+      <a class="navbar__list--listitem">PRODUCT</a>
+    </div>
+    <div class="navbar__btn">
+      ADMIN
+    </div>
+  </nav>
+
+  <div class="main">
+    <h1 class="title">OVERVIEW</h1>
+    <div class="main__time-period">
+      <input type="date">
+      <i class="fas fa-caret-right"></i>
+      <input type="date">
+      <select name="period-option">
+        <option value="Weekly">Weekly</option>
+        <option value="Monthly">Monthly</option>
+        <option value="Quarterly">Quarterly</option>
+        <option value="Yearly">Yearly</option>
+      </select>
+
+    </div>
+    <div class="cards">
+      <div class="main__total-revenue card">
+        <i class="fas fa-hand-holding-usd"></i>
+        <span class="subtitle">
+          Total Revenue
+        </span>
+        <p class="number">
+          54,540
+        </p>
+      </div>
+      <div class="main__total-cost card">
+        <i class="fas fa-boxes"></i>
+        <span class="subtitle">
+          Total Cost
+        </span>
+        <p class="number">
+          12,660
+        </p>
+      </div>
+      <div class="main__net-income card">
+        <i class="fas fa-money-bill"></i>
+        <span class="subtitle">
+          Net Income
+        </span>
+        <p class="number">
+          41,880
+        </p>
+      </div>
+    </div>
+    <div class="main__activity">
+      <h1 class="title">Activity</h1>
+      <canvas class="canvas" id="activityChart" width="860" height="300"></canvas>
+    </div>
+    <div class="main__transaction-website">
+      <h1 class="title">Transaction Website</h1>
+
+      <div class="sites">
+        <div class="site">
+          <i class="fab fa-facebook icon"></i>
+          <span class="siteurl">Facebook.com</span>
+          <span class="trans-number">45,836</span>
+          <span class="trend trend--up">
+            <i class="fas fa-arrow-up"></i>
+            20%
+          </span>
+        </div>
+
+        <div class="site">
+          <i class="fab fa-google icon"></i>
+          <span class="siteurl">google.com</span>
+          <span class="trans-number">23,582</span>
+          <span class="trend trend--up">
+            <i class="fas fa-arrow-up"></i>
+            12%
+          </span>
+        </div>
+        <div class="site">
+          <i class="fas fa-shopping-bag icon"></i>
+          <span class="siteurl">Shopify.com</span>
+          <span class="trans-number">2,489</span>
+          <span class="trend trend--down">
+            <i class="fas fa-arrow-down"></i>
+            15%
+          </span>
+        </div>
+        <div class="site">
+          <i class="fab fa-wordpress icon"></i>
+          <span class="siteurl">Wordpress.com</span>
+          <span class="trans-number">1,057</span>
+          <span class="trend trend--down">
+            <i class="fas fa-arrow-down"></i>
+            30%
+          </span>
+        </div>
+
+      </div>
+    </div>
+    <div class="main__latest-order">
+      <h1 class="title">Latest Orders</h1>
+      <div class="orders">
+        <div class="order">
+          <div class="order__img">
+            <img src="http://via.placeholder.com/100x100" alt="placeholder">
+          </div>
+          <div class="order__description">
+            <h3 class="order__description--itemname">Vintage T-shirt</h3>
+            <p class="order__description--date">
+              <i class="fas fa-clock"></i>
+              2018/6/13 13:42
+            </p>
+            <p class="order__description--buyer">
+              <i class="fas fa-male"></i>
+              Belle Willis</p>
+          </div>
+          <div class="order__total">
+            Total
+            <br/>
+            <span class="total-number">3,200</span>
+          </div>
+        </div>
+        <div class="order">
+          <div class="order__img">
+            <img src="http://via.placeholder.com/100x100" alt="placeholder">
+          </div>
+          <div class="order__description">
+            <h3 class="order__description--itemname">Vintage T-shirt</h3>
+            <p class="order__description--date">
+              <i class="fas fa-clock"></i>
+              2018/6/13 13:42
+            </p>
+            <p class="order__description--buyer">
+              <i class="fas fa-male"></i>
+              Belle Willis</p>
+          </div>
+          <div class="order__total">
+            Total
+            <br/>
+            <span class="total-number">3,200</span>
+          </div>
+        </div>
+        <div class="order">
+          <div class="order__img">
+            <img src="http://via.placeholder.com/100x100" alt="placeholder">
+          </div>
+          <div class="order__description">
+            <h3 class="order__description--itemname">Vintage T-shirt</h3>
+            <p class="order__description--date">
+              <i class="fas fa-clock"></i>
+              2018/6/13 13:42
+            </p>
+            <p class="order__description--buyer">
+              <i class="fas fa-male"></i>
+              Belle Willis</p>
+          </div>
+          <div class="order__total">
+            Total
+            <br/>
+            <span class="total-number">3,200</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="./lib/fake.js" type="module"></script>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>

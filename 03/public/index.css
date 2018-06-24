@@ -1,0 +1,175 @@
+.main {
+  background-color: #f2f2f2;
+  padding: 4.2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  grid-template-areas: "a a a b b b" "c c c c c c" "f f f f f f" "g g g h h h"; }
+  .main .title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem; }
+  .main .subtitle {
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+  .main .number {
+    font-size: 3.6rem;
+    font-weight: 700; }
+  .main__time-period {
+    background-color: #f2f2f2;
+    grid-area: b;
+    text-align: right;
+    align-content: baseline; }
+    .main__time-period input {
+      background-color: inherit;
+      border: 0; }
+    .main__time-period select {
+      background-color: inherit;
+      border: 0; }
+  .main .cards {
+    grid-area: c;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    align-items: center; }
+    .main .cards .card {
+      text-align: center;
+      padding: 3rem 0;
+      line-height: 1.5;
+      font-weight: 500;
+      background-color: #fff; }
+      .main .cards .card .number {
+        font-size: 3.6rem; }
+      .main .cards .card i {
+        font-size: 2.4rem; }
+  .main__total-revenue .number {
+    color: #7ed321; }
+  .main__total-cost .number {
+    color: #d0021b; }
+  .main__net-income .number {
+    color: #4a90e2; }
+  .main__activity {
+    grid-area: f;
+    background-color: #fff;
+    padding: 30px 40px;
+    line-height: 2; }
+    .main__activity .canvas {
+      text-align: center; }
+  .main__transaction-website {
+    grid-area: g;
+    background-color: #fff;
+    padding: 30px 40px;
+    height: 450px; }
+    .main__transaction-website .sites {
+      height: 90%; }
+      .main__transaction-website .sites .site {
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .main__transaction-website .sites .site:not(:first-child) {
+          border-top: 1px solid #ebebeb; }
+        .main__transaction-website .sites .site .icon {
+          font-size: 5rem;
+          margin-right: 2rem; }
+        .main__transaction-website .sites .site .siteurl {
+          color: #9b9b9b;
+          margin-right: auto; }
+        .main__transaction-website .sites .site .trans-number {
+          font-size: 20px;
+          font-weight: 500;
+          margin-right: 2rem; }
+        .main__transaction-website .sites .site .trend--down {
+          color: #d0021b; }
+        .main__transaction-website .sites .site .trend--up {
+          color: #7ed321; }
+  .main__latest-order {
+    grid-area: h;
+    background-color: #fff;
+    padding: 30px 40px; }
+    .main__latest-order .orders {
+      height: 90%; }
+      .main__latest-order .orders .order {
+        height: 33%;
+        display: grid;
+        grid-template-columns: auto 3fr 1fr;
+        align-items: center; }
+        .main__latest-order .orders .order:not(:first-child) {
+          border-top: 1px solid #ebebeb; }
+        .main__latest-order .orders .order__img {
+          margin-right: 2rem; }
+        .main__latest-order .orders .order__description {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-row-gap: 1rem; }
+          .main__latest-order .orders .order__description--itemname {
+            font-size: 20px;
+            font-weight: 700; }
+          .main__latest-order .orders .order__description--date {
+            color: #9b9b9b; }
+          .main__latest-order .orders .order__description--buyer {
+            color: #9b9b9b; }
+          .main__latest-order .orders .order__description p {
+            display: grid;
+            grid-template-columns: 3rem auto; }
+            .main__latest-order .orders .order__description p i {
+              text-align: center; }
+        .main__latest-order .orders .order__total {
+          margin-bottom: 1rem;
+          text-align: right;
+          align-self: end; }
+          .main__latest-order .orders .order__total .total-number {
+            font-size: 2rem;
+            font-weight: 700; }
+
+.navbar {
+  height: 70px;
+  background-color: #000;
+  color: white;
+  padding: 0 42px;
+  display: flex;
+  align-items: center; }
+  .navbar__logo {
+    margin-right: 6.5rem; }
+    .navbar__logo--title {
+      font-size: 2.4rem; }
+  .navbar__list {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center; }
+    .navbar__list--listitem {
+      padding: 25px 0;
+      margin: auto 1rem;
+      text-align: center;
+      width: 80px;
+      list-style: none;
+      color: #9b9b9b; }
+      .navbar__list--listitem:hover {
+        border-bottom: 4px solid white;
+        color: white; }
+    .navbar__list .active {
+      border-bottom: 4px solid white;
+      color: white; }
+  .navbar__btn {
+    margin-left: auto; }
+
+.myTable {
+  margin: 2rem auto;
+  width: 80vw;
+  height: 50vw; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica", cursive;
+  font-size: 1.6rem; }
