@@ -90,7 +90,7 @@ Difficulty faced:
 
 ## 03 admin order
 
-_Finished page **TBD**
+_Finished page https://pentwo.github.io/f2e-challenge/03/public/index.html
 
 請以「管理訂單」為參考方向，來思考一個電商網站所具備的後台管理功能。
 
@@ -98,6 +98,25 @@ _Finished page **TBD**
 Source & Reference UI design:
 
 * https://hexschool.github.io/THE_F2E_Design/week3-admin%20order/
+
+Features:
+
+* TBD
+
+Difficulty faced:
+
+* TBD
+
+## 04 Product Gallery
+
+_Finished page **TBD**
+
+一個好的 web 產品呈現列表，需要結合設計與前端的完美技術合作，才能設計出讓使用者耳目一新的瀏覽介面。
+
+
+Source & Reference UI design:
+
+* https://hexschool.github.io/THE_F2E_Design/week4-product%20gallery/
 
 Features:
 
