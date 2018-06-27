@@ -1,0 +1,29 @@
+$main-color: #000;
+$style-color: #50e3c2;
+$shadow-1: rgba(0, 0, 0, 0.3);
+$shadow-2: rgba(0, 0, 0, 0.1);
+
+$background: #fff;
+$default-font-size: 1.6rem;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: $default-font-size;
+}
+
+@import "header";
+@import "main";
+@import "product";
