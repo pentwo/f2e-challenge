@@ -1,0 +1,51 @@
+$main-color: #000;
+$style-color: #50ff44;
+$shadow-1: rgba(0, 0, 0, 0.3);
+$shadow-2: rgba(0, 0, 0, 0.1);
+
+$background: #fff;
+$default-font-size: 1.6rem;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: $default-font-size;
+}
+
+@import "header";
+@import "content";
+@import "reading";
+@import "ad";
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: invert($main-color);
+  background: $main-color;
+}
+h3 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: $main-color;
+  line-height: 2.4rem;
+}
+
+.main {
+  display: grid;
+}
