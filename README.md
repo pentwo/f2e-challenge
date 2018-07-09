@@ -4,7 +4,8 @@ source [hexschool/TheF2E](https://github.com/hexschool/TheF2E)
 
 ## 00 SignUpVerify
 
-_Finished page http://pentwo.github.io/f2e-challenge/00/index.html_
+Finished page
+ttp://pentwo.github.io/f2e-challenge/00/index.html\_
 
 User story:
 
@@ -36,7 +37,7 @@ Difficulty faced:
 
 ## 01 Todo-list
 
-_Finished page http://pentwo.github.io/f2e-challenge/01-todolist/index.html_
+Finished page http://pentwo.github.io/f2e-challenge/01-todolist/index.html_
 
 User story:
 
@@ -63,7 +64,8 @@ Difficulty faced:
 
 ## 02 filter
 
-\_Finished page http://pentwo.github.io/f2e-challenge/02/public/index.html
+Finished page
+http://pentwo.github.io/f2e-challenge/02/public/index.html
 
 User story:
 
@@ -86,7 +88,7 @@ Difficulty faced:
 
 ## 03 admin order
 
-\_Finished page https://pentwo.github.io/f2e-challenge/03/public/index.html
+Finished page https://pentwo.github.io/f2e-challenge/03/public/index.html
 
 請以「管理訂單」為參考方向，來思考一個電商網站所具備的後台管理功能。
 
@@ -104,7 +106,7 @@ Difficulty faced:
 
 ## 04 Product Gallery
 
-\_Finished page https://pentwo.github.io/f2e-challenge/04/public/index.html
+Finished page https://pentwo.github.io/f2e-challenge/04/public/index.html
 
 一個好的 web 產品呈現列表，需要結合設計與前端的完美技術合作，才能設計出讓使用者耳目一新的瀏覽介面。
 
@@ -120,11 +122,11 @@ Difficulty faced:
 
 - TBD
 
+漫畫閱讀器
+
 ## 05 Comic Viewer
 
-\_Finished page https://pentwo.github.io/f2e-challenge/05/public/index.html
-
-漫畫閱讀器
+Finished page https://pentwo.github.io/f2e-challenge/05/public/index.html
 
 Source & Reference UI design:
 
@@ -134,6 +136,28 @@ Features:
 
 - 廣告版位：請設計出不會讓使用者感到閱讀障礙的廣告瀏覽體驗。
 - 圖片載入：該如何切換到下一頁，儘量減少使用者等待時間。卻又不是全部頁面直接載入造成伺服器 Loading，端看於各位開發者考量設計出滿足兩者需求的前端介面。
+
+Difficulty faced:
+
+- TBD
+
+## 06 Form Validation
+
+Finished page TBD
+
+Source & Reference UI design:
+
+- https://hexschool.github.io/THE_F2E_Design/week6-validation/
+
+Features:
+
+- Form Validation
+  - Required field
+  - E-mail
+  - Password
+  - Phone number
+  - Update picture size
+  - Credit Card number
 
 Difficulty faced:
 
