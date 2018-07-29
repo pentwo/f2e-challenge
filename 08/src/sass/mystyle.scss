@@ -1,0 +1,133 @@
+$main-color: #000;
+$font-color: #fff;
+$style-color-1: #1469ff;
+$style-color-2: #0027c8;
+$style-color-3: #ff3c82;
+$shadow-1: rgba(0, 0, 0, 0.3);
+$shadow-2: rgba(0, 0, 0, 0.1);
+
+$background: #1469ff;
+$default-font-size: 1.6rem;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: $default-font-size;
+  color: $font-color;
+}
+
+@import "header";
+@import "content";
+@import "reading";
+@import "animations";
+
+.title {
+  font-weight: bold;
+  font-size: 6.4rem;
+}
+.subtitle {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background;
+  text-align: center;
+  position: relative;
+  .header {
+    z-index: 10;
+    position: absolute;
+  }
+}
+
+.polygons {
+  // width: 100vw;
+  // height: 100vh;
+
+  // position: absolute;
+  position: relative;
+  display: flex;
+  .polygon {
+  }
+}
+.circle {
+  z-index: 2;
+  position: absolute;
+  background-color: $style-color-2;
+  height: 66vh;
+  width: 66vw;
+  clip-path: circle(40% at 50% 50%);
+  animation: rotateCW 5s ease-out forwards, expandOut 4s ease-out 6.25s forwards;
+}
+.triangle {
+  z-index: 5;
+  position: absolute;
+  background-color: $style-color-3;
+  height: 33vh;
+  width: 33vw;
+  clip-path: polygon(50% 0, 80% 80%, 20% 80%);
+  animation: rotateCW 5s ease-out forwards, expandOut 4s ease-out 6.5s forwards;
+}
+.triangle-reversed {
+  z-index: 5;
+  position: absolute;
+  background-color: $style-color-3;
+  height: 33vh;
+  width: 33vw;
+  clip-path: polygon(20% 20%, 80% 20%, 50% 100%);
+  animation: rotateCCW 5s ease-out forwards, expandOut 4s ease-out 6.5s forwards;
+}
+.star {
+  z-index: 5;
+  position: absolute;
+  background-color: #ff3c82;
+  height: 33vh;
+  width: 33vw;
+  clip-path: polygon(
+    0% 25%,
+    33% 25%,
+    50% 0%,
+    66% 25%,
+    100% 25%,
+    85% 50%,
+    100% 75%,
+    66% 75%,
+    50% 100%,
+    33% 75%,
+    0% 75%,
+    15% 50%
+  );
+}
+.square {
+  z-index: 1;
+  position: absolute;
+  background-color: #000;
+  height: 50vh;
+  width: 50vw;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  animation: rotateCCW 5s ease-out forwards, expandOut 4s ease-out 6s forwards;
+}
+
+.reversed {
+  transform: rotate(180deg);
+}

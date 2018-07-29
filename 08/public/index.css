@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #fff; }
+
+@keyframes rotateCW {
+  0% {
+    transform: rotate(-720deg) scale(1.5, 1.5); }
+  100% {
+    transform: rotate(0) scale(1, 1); } }
+
+@keyframes rotateCCW {
+  0% {
+    transform: rotate(0) scale(1.2, 1.2); }
+  100% {
+    transform: rotate(-720deg) scale(1, 1); } }
+
+@keyframes expandOut {
+  0% { }
+  100% {
+    transform: scale(30, 30); } }
+
+.title {
+  font-weight: bold;
+  font-size: 6.4rem; }
+
+.subtitle {
+  font-weight: 400;
+  font-size: 2.4rem; }
+
+.centered {
+  align-items: center;
+  justify-content: center; }
+
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1469ff;
+  text-align: center;
+  position: relative; }
+  .main .header {
+    z-index: 10;
+    position: absolute; }
+
+.polygons {
+  position: relative;
+  display: flex; }
+
+.circle {
+  z-index: 2;
+  position: absolute;
+  background-color: #0027c8;
+  height: 66vh;
+  width: 66vw;
+  clip-path: circle(40% at 50% 50%);
+  animation: rotateCW 5s ease-out forwards, expandOut 4s ease-out 6.25s forwards; }
+
+.triangle {
+  z-index: 5;
+  position: absolute;
+  background-color: #ff3c82;
+  height: 33vh;
+  width: 33vw;
+  clip-path: polygon(50% 0, 80% 80%, 20% 80%);
+  animation: rotateCW 5s ease-out forwards, expandOut 4s ease-out 6.5s forwards; }
+
+.triangle-reversed {
+  z-index: 5;
+  position: absolute;
+  background-color: #ff3c82;
+  height: 33vh;
+  width: 33vw;
+  clip-path: polygon(20% 20%, 80% 20%, 50% 100%);
+  animation: rotateCCW 5s ease-out forwards, expandOut 4s ease-out 6.5s forwards; }
+
+.star {
+  z-index: 5;
+  position: absolute;
+  background-color: #ff3c82;
+  height: 33vh;
+  width: 33vw;
+  clip-path: polygon(0% 25%, 33% 25%, 50% 0%, 66% 25%, 100% 25%, 85% 50%, 100% 75%, 66% 75%, 50% 100%, 33% 75%, 0% 75%, 15% 50%); }
+
+.square {
+  z-index: 1;
+  position: absolute;
+  background-color: #000;
+  height: 50vh;
+  width: 50vw;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  animation: rotateCCW 5s ease-out forwards, expandOut 4s ease-out 6s forwards; }
+
+.reversed {
+  transform: rotate(180deg); }

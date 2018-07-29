@@ -1,0 +1,27 @@
+@keyframes rotateCW {
+  0% {
+    transform: rotate(-720deg) scale(1.5, 1.5);
+  }
+
+  100% {
+    transform: rotate(0) scale(1, 1);
+  }
+}
+
+@keyframes rotateCCW {
+  0% {
+    transform: rotate(0) scale(1.2, 1.2);
+  }
+
+  100% {
+    transform: rotate(-720deg) scale(1, 1);
+  }
+}
+
+@keyframes expandOut {
+  0% {
+  }
+  100% {
+    transform: scale(30, 30);
+  }
+}
